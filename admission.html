@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addmission form</title>
+    <link rel="icon" href="spm college logo.jpg">
+    <style>
+
+
+h2{
+    text-align:center;
+    color:darkblue;
+}
+
+fieldset{
+    background-color:white;
+}
+
+legend{
+    color:rgb(139, 0, 53);
+    font-weight:bold;
+}
+
+input,textarea{
+    padding:5px;
+    border:1px solid rgb(71, 212, 61);
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    background-color:green;
+    color:white;
+}
+
+input[type="reset"]{
+    background-color:red;
+    color:white;
+}
+</style>
+</head>
+<body>
+    <form>
+    <h2 id="4" syle="font-size:45px;"><center>Admission Form</center></h2>
+    <fieldset>
+        <legend>Admission Form</legend>
+    
+       <label> Name: <input type="text" name="user"></label> <br><br>
+       <label>Father name: <input type="text"name="fname"> </label><br><br>
+       <label>Mother name: <input type="text"name="mname"> </label><br><br>
+       <label>Gender  Male:<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="Female"></label><br><br>
+       <laberl>Date of birth: <input type="date"><input type="time"></laberl><br><br>
+        <laberl>Date of birth: <input type="date" name="date"></laberl><br><br>
+       <label> Mobile No.<input type="tel" maxlength="10"></label><br><br>
+       <label> Email: <input type="email"></label><br><br> 
+       <label> Courses: <input list="courses">
+        <datalist id="courses">
+            <option value="BCA"></option>
+            <option value="Bsc"></option>
+            <option value="BCom"></option>
+        </datalist>
+       </label><br><br>
+       <label>pin Code: <input type="number"></label>
+       <label> State: <input list="state">
+        <datalist id="state">
+            <option value="Bhiar"></option>
+            <option value="Jharkhand"></option>
+            <option value="U.P"></option>
+            <option value="Delhi"></option>
+            <option value="Panjab"></option>
+        </datalist>
+       </label><br><br>
+       <!-- <fieldset><legend><h3> Address Info </h3></legend></fieldset> -->
+       <label> Address: <textarea name="address" rows="4"cols="30" placeholder="vill+post+ps"></textarea> </label><br><br>
+
+       
+       
+
+
+    </fieldset>
+    <fieldset><legend>File Upload</legend>
+        <label>Photo<input type="file"  accept="image/*"></label>
+        <label>Addhar card<input type="file" multiple accept=".pdf"></label> <br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    
+    </fieldset>
+    
+    </form>
+</body>
+</html>
